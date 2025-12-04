@@ -1737,10 +1737,10 @@ header.main-header .header-sticky.active{
 	background: var(--secondary-color);
 	border-radius: 20px;
 	padding: 40px;
-	height: calc(100% - 30px);
 	margin-bottom: 30px;
 	overflow: hidden;
 }
+
 
 .how-works-item::before{
 	content: '';
@@ -4307,48 +4307,6 @@ header.main-header .header-sticky.active{
 	padding: 50px;
 }
 
-.google-map-iframe{
-	height: 700px;
-	margin-top: 100px;
-}
-
-.google-map-iframe iframe{
-	width: 100%;
-	height: 700px;
-	filter: grayscale(1);
-	border-radius: 20px;
-	transition: all 0.4s ease-in-out;
-}
-
-.google-map-iframe iframe:hover{
-	filter: grayscale(0);
-}
-
-/************************************/
-/***    32. 404 Error Page css    ***/
-/************************************/
-
-.error-page{
-	padding: 100px 0px;
-}
-
-.error-page-image{
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.error-page-image img{
-	width: 100%;
-	max-width: 40%;
-}
-
-.error-page-content{
-	text-align: center;
-}
-
-.error-page-content .section-title{
-	margin-bottom: 15px;
-}
 
 /************************************/
 /***      33. Responsive css      ***/
@@ -6405,9 +6363,9 @@ header.main-header.header-elite .navbar{
 	background-image: url('../images/hero-bg-elite.png');
 	background-repeat: no-repeat;
 	background-position: top center;
-	/* background-size: 100% auto; */
-	margin-top: 20px;
-	margin-bottom: 10px;
+	background-size: 100% 100%;
+	margin-top : 20px;
+	margin-bottom: 0px;
 }
 
 .hero-content-elite{
@@ -6463,10 +6421,10 @@ header.main-header.header-elite .navbar{
 }
 
 .about-us-item-1-elite,
-.about-us-item-2-elite,
 .about-us-item-3-elite{
 	position: relative;
-	width: calc(100% - 10px);
+	width: calc(65% - 50px);
+	margin-left: 20px;
 }
 
 .about-us-item-image-elite{
@@ -6543,6 +6501,14 @@ header.main-header.header-elite .navbar{
 .about-us-item-body-elite h2{
 	font-size: 40px;
 	color: var(--white-color);
+}
+
+.about-us-item-2-elite{
+	width: calc(35% - 50px);
+	background: var(--secondary-color);
+	border-radius: 20px;
+	align-content: center;
+	padding: 40px;
 }
 
 .about-progess-box-elite{
@@ -7056,14 +7022,14 @@ header.main-header.header-elite .navbar{
 .feature-list-elite{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 30px;
+	gap: 10px;
 }
 
 .feature-item-elite{
 	width: calc(33.33% - 20px);
 	background-color: var(--secondary-color);
 	border-radius: 20px;
-	padding: 40px;
+	padding: 25px;
 }
 
 .feature-item-elite.highlighted-box{
@@ -7336,7 +7302,7 @@ header.main-header.header-elite .navbar{
 }
 
 .how-it-works-elite{
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .how-work-item-elite{
@@ -7344,6 +7310,7 @@ header.main-header.header-elite .navbar{
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 420px;
+	width: 100%;
 	height: calc(100% - 30px);
 	gap: 40px;
 	background: var(--secondary-color);
@@ -8081,10 +8048,6 @@ header.main-header.header-elite .navbar{
 		height: 90px;
 	}
 
-	.hero-elite{
-        margin-bottom: 260px;
-    }
-
 	.about-us-item-tag-elite{
 		top: 30px;
 		left: 30px;
@@ -8182,6 +8145,7 @@ header.main-header.header-elite .navbar{
 
 	.feature-item-elite{
 		padding: 30px;
+		margin: 5px;
 	}
 
 	.what-do-body-item-content-elite h3{
@@ -8266,10 +8230,6 @@ header.main-header.header-elite .navbar{
 	.hero-border-btn-elite{
 		padding: 12px 42px 12px 15px;
 	}
-
-	.hero-elite{
-        margin-bottom: 195px;
-    }
 
 	.about-us-item-1-elite{
 		width: 100%;
@@ -8519,7 +8479,6 @@ header.main-header.header-elite .navbar{
 	.hero-elite{
 		padding: 160px 0 30;
 		margin-top: 0;
-		margin-bottom: 150px;
 	}
 
 	.about-us-elite{
@@ -8664,9 +8623,6 @@ header.main-header.header-elite .navbar{
 
 @media only screen and (max-width: 767px){
 
-	.hero-elite{
-		margin-bottom: 110px;
-	}
 
 	.hero-btn-elite{
 		gap: 15px;
@@ -8794,7 +8750,7 @@ header.main-header.header-elite .navbar{
 	}
 
 	.feature-item-elite{
-		width: 100%;
+		width: 95%;
 	}
 
 	.feature-item-elite.highlighted-box h2{
